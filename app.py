@@ -5,9 +5,9 @@ app = Flask(__name__)
 # In-memory database
 items = []
 
-@app.route('/')
-def index():
-    return render_template('index.html', items=items)
+# @app.route('/')
+# def index():
+#     return render_template('index.html', items=items)
 
 @app.route('/add', methods=['POST'])
 def add_item():
